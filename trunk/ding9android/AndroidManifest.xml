@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ding9.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light" >
+        <activity
+            android:name="com.ding9.android.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ding9.android.activity.catalog.CatalogBrowseActivity"
+            android:label="@string/title_activity_catalog" >
+        </activity>
+        <activity
+            android:name="com.ding9.android.activity.member.CustomerCenterActivity"
+            android:label="@string/title_activity_customer_center" >
+        </activity>
+        <activity
+            android:name="com.ding9.android.activity.member.MerchantCenterActivity"
+            android:label="@string/title_activity_merchant_center" >
+        </activity>
+        <activity
+            android:name="com.ding9.android.activity.member.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.ding9.android.activity.member.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+    </application>
+
+</manifest>
